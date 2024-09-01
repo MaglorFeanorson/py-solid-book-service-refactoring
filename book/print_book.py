@@ -9,13 +9,13 @@ class Printer(ABC):
         pass
 
 
-class ConsolePrinter(Printer):
+class PrinterConsole(Printer):
     def print_book(self, book: Book) -> None:
         print(f"Printing the book: {book.title}...")
         print(book.content)
 
 
-class ReversePrinter(Printer):
+class PrinterReverse(Printer):
     def print_book(self, book: Book) -> None:
         print(f"Printing the book in reverse: {book.title}...")
         print(book.content[::-1])

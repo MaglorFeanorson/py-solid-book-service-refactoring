@@ -9,11 +9,11 @@ class Display(ABC):
         pass
 
 
-class ConsoleDisplay(Display):
+class DisplayConsole(Display):
     def display(self, book: Book) -> None:
         print(book.content)
 
 
-class ReverseDisplay(Display):
+class DisplayReverse(Display):
     def display(self, book: Book) -> None:
         print(book.content[::-1])
